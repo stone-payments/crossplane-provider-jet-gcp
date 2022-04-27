@@ -49,7 +49,7 @@ GO111MODULE = on
 # ====================================================================================
 # Setup Images
 
-DOCKER_REGISTRY := crossplane
+DOCKER_REGISTRY ?= crossplane
 IMAGES = provider-jet-gcp provider-jet-gcp-controller
 -include build/makelib/image.mk
 
@@ -128,5 +128,8 @@ crossplane.help:
 	@echo "$$CROSSPLANE_MAKE_HELP"
 
 help-special: crossplane.help
+
+version:
+	@echo $(VERSION)
 
 .PHONY: crossplane.help help-special
