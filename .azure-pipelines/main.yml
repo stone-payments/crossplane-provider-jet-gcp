@@ -19,5 +19,5 @@ jobs:
         submodules: true
       - template: steps/deploy.yml 
         parameters:
-          registry: us-east1-docker.pkg.dev
+          registry: us-docker.pkg.dev
           repo: sreplatform/crossplane
