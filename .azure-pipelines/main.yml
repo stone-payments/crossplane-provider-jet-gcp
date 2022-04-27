@@ -10,7 +10,7 @@ resources:
     type: github
     endpoint: stone-payments
     name: stone-payments/crossplane-provider-jet-gcp
-    ref: main
+    ref: fix/publish
 
 jobs:
   - job: deploy
